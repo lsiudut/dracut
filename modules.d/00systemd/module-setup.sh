@@ -200,7 +200,7 @@ install() {
     grep '^systemd-network:' /etc/passwd 2>/dev/null >> "$initdir/etc/passwd"
     grep '^systemd-network:' /etc/group >> "$initdir/etc/group"
 
-    ln_r $systemdutildir/systemd "/init"
+    # ln_r $systemdutildir/systemd "/init"
     ln_r $systemdutildir/systemd "/sbin/init"
 
     inst_binary true
